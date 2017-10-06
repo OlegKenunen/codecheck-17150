@@ -10,7 +10,7 @@ import java.util.List;
  *
  */
 public class Node {
-    private List<Node> children = new ArrayList<Node>();
+    private List<Node> children = new ArrayList<>();
     private String word = null;
     private int depth;
     private int worstGain; //main characteristics to find Nash equilibrium in sub-games
@@ -75,7 +75,7 @@ public class Node {
 
     public String findSolution() {
         if (children.size() == 0) {
-            return "none";
+            return "#none";
         }
 
         int numWinningWorst = 0;
